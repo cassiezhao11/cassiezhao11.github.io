@@ -29,7 +29,8 @@
 <div class="container">
     <h2 id="h2">Account Delete</h2>
     <form onsubmit="return validateForm()">
-        <input type="text" placeholder="Username" name="username" required>
+        <input type="text" placeholder="Username" name="username" required  oninvalid="setCustomValidity('Please enter your message!');" oninput="setCustomValidity('');"
+>
 	    </br>
 <!--         <input type="password" placeholder="Password" name="password" required> -->
         <button type="submit">Submit</button>
