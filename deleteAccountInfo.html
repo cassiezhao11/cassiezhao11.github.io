@@ -24,11 +24,11 @@
 		</br></br></br>
 
 <div class="container">
-    <h2 id="h2">Login</h2>
+    <h2 id="h2">Account Delete</h2>
     <form onsubmit="return validateForm()">
         <input type="text" placeholder="Username" name="username" required>
-        <input type="password" placeholder="Password" name="password" required>
-        <button type="submit">Login</button>
+<!--         <input type="password" placeholder="Password" name="password" required> -->
+        <button type="submit">Submit</button>
     </form>
 </div>
 		</br></br></br>
@@ -39,10 +39,10 @@
 <script>
     function validateForm() {
         var username = document.forms[0].username.value;
-        var password = document.forms[0].password.value;
+       // var password = document.forms[0].password.value;
 
-        if (username === '' || password === '') {
-            alert('Please fill in all fields');
+        if (username === '') {
+            alert('Please fill in username');
             return false;
         }
 
