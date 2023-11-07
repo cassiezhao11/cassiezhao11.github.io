@@ -28,7 +28,7 @@
 
 <div class="container">
     <h2 id="h2">Account Delete</h2>
-    <form onsubmit="return validateForm()">
+    <form onsubmit="validateForm()">
         <input type="text" placeholder="Username" name="username" required  oninvalid="setCustomValidity('Please enter your message!');" oninput="setCustomValidity('');"
 >
 	    </br>
@@ -48,10 +48,12 @@
 
         if (username == '') {
             alert('Please fill in username');
-            return false;
+            
         }
 
-        return true;
+	alert('测试好不收！！')
+
+        
     }
 </script>
 		<style type="text/css">
